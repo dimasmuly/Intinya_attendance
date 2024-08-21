@@ -1,3 +1,4 @@
 opencv-python
 deepface
 datetime
+streamlit
