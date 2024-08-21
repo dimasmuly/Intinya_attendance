@@ -4,4 +4,3 @@ numpy
 deepface
 kivy
 tf-keras
-libgl1-mesa-glx
