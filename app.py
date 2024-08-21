@@ -41,16 +41,15 @@ def save_result_to_json(data, filename='attendance.json'):
     with open(filename, 'w') as file:
         json.dump(attendance_data, file, indent=4)
 
-def facesentiment(user_type, action, camera_source):
+def facesentiment(user_type, action):
     # st.title("Real-Time Facial Analysis with Streamlit")
     # Create a VideoCapture object
-    if camera_source == "Local Camera":
-        cap = cv2.VideoCapture(0)  # Use default local camera
-    else:
-        cap = cv2.VideoCapture(camera_source)  # Use IP camera URL or external camera URL
-
+    cap = cv2.VideoCapture(0)  # Use default local camera
+    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+    
     if not cap.isOpened():
-        st.error("Failed to open camera. Please check your camera source.")
+        st.error("Failed to open webcam. Please check your camera.")
         return
 
     stframe = st.image([])  # Placeholder for the webcam feed
@@ -63,8 +62,9 @@ def facesentiment(user_type, action, camera_source):
 
         # Check if frame is captured successfully
         if not ret:
-            st.warning("Failed to capture image from camera. Please check your camera.")
-            continue
+            st.error("Failed to capture frame from camera")
+            st.info("Please turn off the other app that is using the camera and restart app")
+            st.stop()
 
         # Analyze the frame using DeepFace
         result = analyze_frame(frame)
@@ -136,14 +136,8 @@ def main():
         if user_type == "Employee":
             action = st.selectbox("Select Action", ["In", "Out"])
         
-        camera_source = st.selectbox("Select Camera Source", ["Local Camera", "IP Camera"])
-        if camera_source == "IP Camera":
-            camera_url = st.text_input("Enter IP Camera URL")
-        else:
-            camera_url = "Local Camera"  # Default local camera
-
         if st.button("Start Detection", key="start_button"):  # Add a unique key for the start button
-            facesentiment(user_type, action, camera_url)
+            facesentiment(user_type, action)
 
     elif choice == "About":
         st.subheader("About this app")
