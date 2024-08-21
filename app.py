@@ -41,12 +41,16 @@ def save_result_to_json(data, filename='attendance.json'):
     with open(filename, 'w') as file:
         json.dump(attendance_data, file, indent=4)
 
-def facesentiment(user_type, action):
+def facesentiment(user_type, action, camera_source):
     # st.title("Real-Time Facial Analysis with Streamlit")
     # Create a VideoCapture object
-    cap = cv2.VideoCapture(1)  # Use default camera
+    if camera_source == "Local Camera":
+        cap = cv2.VideoCapture(0)  # Use default local camera
+    else:
+        cap = cv2.VideoCapture(camera_source)  # Use IP camera URL or external camera URL
+
     if not cap.isOpened():
-        st.error("Failed to open webcam. Please check your camera.")
+        st.error("Failed to open camera. Please check your camera source.")
         return
 
     stframe = st.image([])  # Placeholder for the webcam feed
@@ -59,7 +63,7 @@ def facesentiment(user_type, action):
 
         # Check if frame is captured successfully
         if not ret:
-            st.warning("Failed to capture image from webcam. Please check your camera.")
+            st.warning("Failed to capture image from camera. Please check your camera.")
             continue
 
         # Analyze the frame using DeepFace
@@ -131,8 +135,15 @@ def main():
         action = None
         if user_type == "Employee":
             action = st.selectbox("Select Action", ["In", "Out"])
+        
+        camera_source = st.selectbox("Select Camera Source", ["Local Camera", "IP Camera"])
+        if camera_source == "IP Camera":
+            camera_url = st.text_input("Enter IP Camera URL")
+        else:
+            camera_url = "Local Camera"  # Default local camera
+
         if st.button("Start Detection", key="start_button"):  # Add a unique key for the start button
-            facesentiment(user_type, action)
+            facesentiment(user_type, action, camera_url)
 
     elif choice == "About":
         st.subheader("About this app")
