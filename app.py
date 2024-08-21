@@ -1,13 +1,18 @@
-from kivy.uix.gridlayout import accumulate
 import streamlit as st
 import numpy as np
-from deepface import DeepFace
 import json
 import os
 from datetime import datetime
 
 # Use opencv-python-headless to avoid libGL.so.1 issues
 import cv2
+
+# Attempt to import DeepFace and handle potential import errors
+try:
+    from deepface import DeepFace
+except ImportError as e:
+    st.error(f"Failed to import DeepFace: {e}")
+    st.stop()
 
 # Function to analyze facial attributes using DeepFace
 def analyze_frame(frame):
