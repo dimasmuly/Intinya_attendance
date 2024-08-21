@@ -3,7 +3,6 @@ import numpy as np
 import json
 import os
 from datetime import datetime
-import ctypes
 
 # Attempt to import OpenCV with the headless option
 try:
