@@ -1,4 +1,4 @@
-!!opencv-python
-!!deepface
-!!json
-!!datetime
+!opencv-python
+!deepface
+!json
+!datetime
