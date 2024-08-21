@@ -1,0 +1,1138 @@
+[
+    {
+        "user_type": "Employee",
+        "age": 21,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Customer",
+        "age": 29,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93
+    },
+    {
+        "user_type": "Employee",
+        "age": 23,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.94
+    },
+    {
+        "user_type": "Employee",
+        "age": 25,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Employee",
+        "age": 28,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91
+    },
+    {
+        "user_type": "Employee",
+        "age": 30,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Employee",
+        "age": 23,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.94
+    },
+    {
+        "user_type": "Employee",
+        "age": 23,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.95
+    },
+    {
+        "user_type": "Employee",
+        "age": 26,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93
+    },
+    {
+        "user_type": "Employee",
+        "age": 30,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93
+    },
+    {
+        "user_type": "Employee",
+        "age": 29,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93
+    },
+    {
+        "user_type": "Employee",
+        "age": 28,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91
+    },
+    {
+        "user_type": "Employee",
+        "age": 29,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Employee",
+        "age": 24,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.94
+    },
+    {
+        "user_type": "Employee",
+        "age": 22,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Employee",
+        "age": 22,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93
+    },
+    {
+        "user_type": "Employee",
+        "age": 22,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Employee",
+        "age": 25,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91
+    },
+    {
+        "user_type": "Employee",
+        "age": 26,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.9
+    },
+    {
+        "user_type": "Employee",
+        "age": 27,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Employee",
+        "age": 29,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Employee",
+        "age": 30,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Employee",
+        "age": 28,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Employee",
+        "age": 29,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93
+    },
+    {
+        "user_type": "Employee",
+        "age": 28,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93
+    },
+    {
+        "user_type": "Employee",
+        "age": 26,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91
+    },
+    {
+        "user_type": "Employee",
+        "age": 27,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91
+    },
+    {
+        "user_type": "Customer",
+        "age": 23,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Employee",
+        "age": 21,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Employee",
+        "age": 21,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91
+    },
+    {
+        "user_type": "Employee",
+        "age": 25,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Employee",
+        "age": 25,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91
+    },
+    {
+        "user_type": "Employee",
+        "age": 25,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.9
+    },
+    {
+        "user_type": "Employee",
+        "age": 27,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91
+    },
+    {
+        "user_type": "Employee",
+        "age": 25,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.9
+    },
+    {
+        "user_type": "Employee",
+        "age": 25,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Employee",
+        "age": 26,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Employee",
+        "age": 28,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93
+    },
+    {
+        "user_type": "Employee",
+        "age": 26,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93
+    },
+    {
+        "user_type": "Employee",
+        "age": 27,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91
+    },
+    {
+        "user_type": "Employee",
+        "age": 24,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93
+    },
+    {
+        "user_type": "Customer",
+        "age": 25,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93
+    },
+    {
+        "user_type": "Employee",
+        "age": 23,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91
+    },
+    {
+        "user_type": "Employee",
+        "age": 23,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91
+    },
+    {
+        "user_type": "Employee",
+        "age": 24,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "angry",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Employee",
+        "age": 24,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Employee",
+        "age": 24,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93
+    },
+    {
+        "user_type": "Customer",
+        "age": 23,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "angry",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Customer",
+        "age": 22,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "angry",
+        "face_confidence": 0.93
+    },
+    {
+        "user_type": "Customer",
+        "age": 24,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.89
+    },
+    {
+        "user_type": "Customer",
+        "age": 23,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93
+    },
+    {
+        "user_type": "Customer",
+        "age": 24,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Customer",
+        "age": 24,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "angry",
+        "face_confidence": 0.93
+    },
+    {
+        "user_type": "Customer",
+        "age": 25,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Customer",
+        "age": 24,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93
+    },
+    {
+        "user_type": "Customer",
+        "age": 24,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Customer",
+        "age": 23,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "sad",
+        "face_confidence": 0.91
+    },
+    {
+        "user_type": "Customer",
+        "age": 24,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Customer",
+        "age": 24,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93
+    },
+    {
+        "user_type": "Customer",
+        "age": 23,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Customer",
+        "age": 24,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92
+    },
+    {
+        "user_type": "Customer",
+        "age": 25,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 32,
+        "gender": "Man",
+        "race": "white",
+        "emotion": "happy",
+        "face_confidence": 0,
+        "timestamp": "2024-08-21T10:27:14.518956"
+    },
+    {
+        "user_type": "Customer",
+        "action": "In",
+        "age": 35,
+        "gender": "Man",
+        "race": "white",
+        "emotion": "neutral",
+        "face_confidence": 0,
+        "timestamp": "2024-08-21T10:27:41.234003"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 38,
+        "gender": "Man",
+        "race": "white",
+        "emotion": "sad",
+        "face_confidence": 0.96,
+        "timestamp": "2024-08-21T10:37:47.901440"
+    },
+    {
+        "user_type": "Customer",
+        "action": "In",
+        "age": 29,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "sad",
+        "face_confidence": 0.97,
+        "timestamp": "2024-08-21T10:47:52.990877"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 23,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "happy",
+        "face_confidence": 0.93,
+        "timestamp": "2024-08-21T10:48:36.581298"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 22,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91,
+        "timestamp": "2024-08-21T10:55:03.635763"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 30,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93,
+        "timestamp": "2024-08-21T10:55:04.198679"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 22,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91,
+        "timestamp": "2024-08-21T11:02:41.375948"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 28,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.94,
+        "timestamp": "2024-08-21T11:02:41.946377"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 29,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93,
+        "timestamp": "2024-08-21T11:02:42.503791"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 30,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.94,
+        "timestamp": "2024-08-21T11:02:43.023415"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 28,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.94,
+        "timestamp": "2024-08-21T11:02:43.538032"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 29,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.94,
+        "timestamp": "2024-08-21T11:02:44.041564"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 29,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.94,
+        "timestamp": "2024-08-21T11:02:44.557562"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 29,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.94,
+        "timestamp": "2024-08-21T11:02:45.078273"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 28,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93,
+        "timestamp": "2024-08-21T11:02:45.574268"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 28,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93,
+        "timestamp": "2024-08-21T11:02:46.064249"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 32,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.94,
+        "timestamp": "2024-08-21T11:02:46.625858"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 31,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93,
+        "timestamp": "2024-08-21T11:02:47.188078"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 32,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.94,
+        "timestamp": "2024-08-21T11:02:47.692428"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 30,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.94,
+        "timestamp": "2024-08-21T11:02:48.247574"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 30,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93,
+        "timestamp": "2024-08-21T11:02:48.775330"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 31,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "happy",
+        "face_confidence": 0.91,
+        "timestamp": "2024-08-21T11:02:49.292721"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 31,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91,
+        "timestamp": "2024-08-21T11:02:49.810405"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 31,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.9,
+        "timestamp": "2024-08-21T11:02:50.317077"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 32,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91,
+        "timestamp": "2024-08-21T11:02:50.860890"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 25,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "angry",
+        "face_confidence": 0.94,
+        "timestamp": "2024-08-21T11:02:51.357401"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 23,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "fear",
+        "face_confidence": 0.93,
+        "timestamp": "2024-08-21T11:02:51.857118"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 24,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "fear",
+        "face_confidence": 0.92,
+        "timestamp": "2024-08-21T11:02:52.398748"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 24,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "angry",
+        "face_confidence": 0.91,
+        "timestamp": "2024-08-21T11:02:52.914030"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 25,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "angry",
+        "face_confidence": 0.93,
+        "timestamp": "2024-08-21T11:02:53.476329"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 27,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.9,
+        "timestamp": "2024-08-21T11:02:54.022532"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 26,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.9,
+        "timestamp": "2024-08-21T11:02:54.568026"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 27,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.9,
+        "timestamp": "2024-08-21T11:02:55.067700"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 28,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.9,
+        "timestamp": "2024-08-21T11:02:55.600475"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 28,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.88,
+        "timestamp": "2024-08-21T11:02:56.155248"
+    },
+    {
+        "user_type": "Employee",
+        "action": "In",
+        "age": 28,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.89,
+        "timestamp": "2024-08-21T11:02:56.692761"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 25,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92,
+        "timestamp": "2024-08-21T11:13:46.033414"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 25,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "sad",
+        "face_confidence": 0.95,
+        "timestamp": "2024-08-21T11:13:46.537954"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 24,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "sad",
+        "face_confidence": 0.95,
+        "timestamp": "2024-08-21T11:13:47.060773"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 24,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "sad",
+        "face_confidence": 0.96,
+        "timestamp": "2024-08-21T11:13:47.571041"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 33,
+        "gender": "Man",
+        "race": "white",
+        "emotion": "sad",
+        "face_confidence": 0,
+        "timestamp": "2024-08-21T11:13:48.057176"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 25,
+        "gender": "Man",
+        "race": "black",
+        "emotion": "sad",
+        "face_confidence": 0.94,
+        "timestamp": "2024-08-21T11:13:48.604316"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 25,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91,
+        "timestamp": "2024-08-21T11:13:49.162146"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 28,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91,
+        "timestamp": "2024-08-21T11:13:49.731845"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 29,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "angry",
+        "face_confidence": 0.91,
+        "timestamp": "2024-08-21T11:13:50.220206"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 26,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "angry",
+        "face_confidence": 0.91,
+        "timestamp": "2024-08-21T11:13:50.770830"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 26,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "angry",
+        "face_confidence": 0.91,
+        "timestamp": "2024-08-21T11:13:51.297285"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 26,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91,
+        "timestamp": "2024-08-21T11:13:51.837610"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 24,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.88,
+        "timestamp": "2024-08-21T11:13:52.359479"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 24,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.9,
+        "timestamp": "2024-08-21T11:13:52.879499"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 25,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91,
+        "timestamp": "2024-08-21T11:13:53.416901"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 24,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92,
+        "timestamp": "2024-08-21T11:13:53.957757"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 29,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93,
+        "timestamp": "2024-08-21T11:13:54.505890"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 27,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "happy",
+        "face_confidence": 0.91,
+        "timestamp": "2024-08-21T11:13:55.081151"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 28,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91,
+        "timestamp": "2024-08-21T11:13:55.602108"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 28,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92,
+        "timestamp": "2024-08-21T11:13:56.094465"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 28,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.92,
+        "timestamp": "2024-08-21T11:13:56.634621"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 28,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "happy",
+        "face_confidence": 0.92,
+        "timestamp": "2024-08-21T11:13:57.173011"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 26,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91,
+        "timestamp": "2024-08-21T11:13:57.743930"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 28,
+        "gender": "Man",
+        "race": "black",
+        "emotion": "neutral",
+        "face_confidence": 0.93,
+        "timestamp": "2024-08-21T11:13:58.328754"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 35,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.93,
+        "timestamp": "2024-08-21T11:13:58.854874"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 28,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.9,
+        "timestamp": "2024-08-21T11:13:59.470390"
+    },
+    {
+        "user_type": "Customer",
+        "action": null,
+        "age": 28,
+        "gender": "Man",
+        "race": "asian",
+        "emotion": "neutral",
+        "face_confidence": 0.91,
+        "timestamp": "2024-08-21T11:14:00.016253"
+    }
+]
