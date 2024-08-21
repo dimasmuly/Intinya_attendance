@@ -5,3 +5,4 @@ deepface
 kivy
 tf-keras
 aiortc
+mesa-libGL
