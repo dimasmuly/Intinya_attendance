@@ -1,7 +1,7 @@
-streamlit==1.37.0
-opencv-python-headless==4.8.0.74
-deepface==0.0.93
-kivy==2.3.0
-tf-keras==2.1.0
-numpy==1.21.6
+streamlit
+opencv-python-headless
+deepface
+kivy
+tf-keras
+numpy
 
