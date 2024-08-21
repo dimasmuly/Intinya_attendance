@@ -1,4 +1,4 @@
-from kivy.uix.gridlayout import accumulate
+from kivy.uix.gridlayout import GridLayout
 import streamlit as st
 import numpy as np
 from deepface import DeepFace
