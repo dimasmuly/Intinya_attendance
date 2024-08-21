@@ -1,3 +1,4 @@
+from kivy.uix.gridlayout import product
 from kivy.uix.gridlayout import accumulate
 import cv2
 import streamlit as st
@@ -44,10 +45,7 @@ def save_result_to_json(data, filename='attendance.json'):
 def facesentiment(user_type, action):
     # st.title("Real-Time Facial Analysis with Streamlit")
     # Create a VideoCapture object
-    cap = cv2.VideoCapture(0)  # Use default local camera
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
-    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
-    
+    cap = cv2.VideoCapture(1)  # Use default camera
     if not cap.isOpened():
         st.error("Failed to open webcam. Please check your camera.")
         return
@@ -62,9 +60,8 @@ def facesentiment(user_type, action):
 
         # Check if frame is captured successfully
         if not ret:
-            st.error("Failed to capture frame from camera")
-            st.info("Please turn off the other app that is using the camera and restart app")
-            st.stop()
+            st.warning("Failed to capture image from webcam. Please check your camera.")
+            continue
 
         # Analyze the frame using DeepFace
         result = analyze_frame(frame)
@@ -135,7 +132,6 @@ def main():
         action = None
         if user_type == "Employee":
             action = st.selectbox("Select Action", ["In", "Out"])
-        
         if st.button("Start Detection", key="start_button"):  # Add a unique key for the start button
             facesentiment(user_type, action)
 
