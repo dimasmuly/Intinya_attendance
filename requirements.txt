@@ -3,4 +3,5 @@ deepface
 datetime
 streamlit
 kivy
+numpy
 tf-keras
