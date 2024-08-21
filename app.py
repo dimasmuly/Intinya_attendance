@@ -55,13 +55,20 @@ def save_result_to_json(data, filename='attendance.json'):
 def facesentiment(user_type, action):
     # st.title("Real-Time Facial Analysis with Streamlit")
     # Create a VideoCapture object
-    cap = cv2.VideoCapture(0)  # Use default local camera
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
-    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
-    
-    if not cap.isOpened():
+    cap = None
+    for i in range(5):  # Try different camera indices
+        cap = cv2.VideoCapture(i)
+        if cap.isOpened():
+            break
+        cap.release()
+        cap = None
+
+    if not cap:
         st.error("Failed to open webcam. Please check your camera.")
         return
+
+    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 
     stframe = st.image([])  # Placeholder for the webcam feed
 
