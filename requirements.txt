@@ -4,3 +4,4 @@ numpy
 deepface
 kivy
 tf-keras
+aiortc
