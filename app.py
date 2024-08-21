@@ -33,7 +33,7 @@ def overlay_text_on_frame(frame, texts):
     cv2.rectangle(overlay, (0, 0), (frame.shape[1], 100), (255, 255, 255), -1)  # White rectangle
     cv2.addWeighted(overlay, alpha, frame, 1 - alpha, 0, frame)
 
-    text_position = 15 # Where the first text is put into the overlay
+    text_position = 15  # Where the first text is put into the overlay
     for text in texts:
         cv2.putText(frame, text, (10, text_position), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
         text_position += 20
@@ -53,8 +53,6 @@ def save_result_to_json(data, filename='attendance.json'):
         json.dump(attendance_data, file, indent=4)
 
 def facesentiment(user_type, action):
-    # st.title("Real-Time Facial Analysis with Streamlit")
-    # Create a VideoCapture object
     cap = None
     for i in range(5):  # Try different camera indices
         cap = cv2.VideoCapture(i)
@@ -102,7 +100,7 @@ def facesentiment(user_type, action):
         # Overlay white rectangle with text on the frame
         texts = [
             f"Age: {result[0]['age']}",
-            f"Face Confidence: {round(result[0]['face_confidence'],3)}",
+            f"Face Confidence: {round(result[0]['face_confidence'], 3)}",
             f"Gender: {result[0]['dominant_gender']} {round(result[0]['gender'][result[0]['dominant_gender']], 3)}",
             f"Race: {result[0]['dominant_race']}",
             f"Dominant Emotion: {result[0]['dominant_emotion']} {round(result[0]['emotion'][result[0]['dominant_emotion']], 1)}",
@@ -135,8 +133,6 @@ def facesentiment(user_type, action):
     cv2.destroyAllWindows()
 
 def main():
-    # Face Analysis Application #
-    # st.title("Real Time Face Emotion Detection Application")
     activities = ["Webcam Face Detection", "About"]
     choice = st.sidebar.selectbox("Select Activity", activities)
     st.sidebar.markdown(
