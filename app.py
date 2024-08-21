@@ -3,6 +3,7 @@ import numpy as np
 import json
 import os
 from datetime import datetime
+from aiortc.contrib.media import MediaPlayer
 
 # Attempt to import OpenCV with the headless option
 try:
@@ -53,20 +54,12 @@ def save_result_to_json(data, filename='attendance.json'):
         json.dump(attendance_data, file, indent=4)
 
 def facesentiment(user_type, action):
-    cap = None
-    for i in range(5):  # Try different camera indices
-        cap = cv2.VideoCapture(i)
-        if cap.isOpened():
-            break
-        cap.release()
-        cap = None
+    player = MediaPlayer('/dev/video0')  # Access the default webcam
+    cap = player.video
 
     if not cap:
         st.error("Failed to open webcam. Please check your camera.")
         return
-
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
-    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 
     stframe = st.image([])  # Placeholder for the webcam feed
 
@@ -74,13 +67,16 @@ def facesentiment(user_type, action):
 
     while True:
         # Capture frame-by-frame
-        ret, frame = cap.read()
+        frame = cap.recv()
 
         # Check if frame is captured successfully
-        if not ret:
+        if frame is None:
             st.error("Failed to capture frame from camera")
             st.info("Please turn off the other app that is using the camera and restart app")
             st.stop()
+
+        # Convert the frame to a format suitable for OpenCV
+        frame = frame.to_ndarray(format="bgr24")
 
         # Analyze the frame using DeepFace
         result = analyze_frame(frame)
@@ -129,8 +125,7 @@ def facesentiment(user_type, action):
             break
 
     # Release the webcam and close all windows
-    cap.release()
-    cv2.destroyAllWindows()
+    player.close()
 
 def main():
     activities = ["Webcam Face Detection", "About"]
