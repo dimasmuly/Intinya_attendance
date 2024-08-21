@@ -4,4 +4,4 @@ deepface
 kivy
 tf-keras
 numpy
-
+ctypes
