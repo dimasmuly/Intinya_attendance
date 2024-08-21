@@ -5,7 +5,11 @@ import os
 from datetime import datetime
 
 # Use opencv-python-headless to avoid libGL.so.1 issues
-import cv2
+try:
+    import cv2
+except ImportError as e:
+    st.error(f"Failed to import cv2: {e}")
+    st.stop()
 
 # Attempt to import DeepFace and handle potential import errors
 try:
