@@ -54,10 +54,17 @@ def save_result_to_json(data, filename='attendance.json'):
         json.dump(attendance_data, file, indent=4)
 
 def facesentiment(user_type, action):
-    player = MediaPlayer('/dev/video0')  # Access the default webcam
-    cap = player.video
+    player = None
+    for i in range(5):  # Try different camera indices
+        try:
+            player = MediaPlayer(f'/dev/video{i}')
+            cap = player.video
+            if cap:
+                break
+        except FileNotFoundError:
+            continue
 
-    if not cap:
+    if not player or not cap:
         st.error("Failed to open webcam. Please check your camera.")
         return
 
