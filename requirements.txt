@@ -1,7 +1,6 @@
-opencv-python
-deepface
-datetime
 streamlit
-kivy
+opencv-python-headless
 numpy
+deepface
+kivy
 tf-keras
