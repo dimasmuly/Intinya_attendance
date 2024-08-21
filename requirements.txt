@@ -1,7 +1,7 @@
 streamlit
-opencv-python-headless
+opencv-python
 numpy
 deepface
 kivy
 tf-keras
-
+libgl1-mesa-glx
