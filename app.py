@@ -5,19 +5,7 @@ import os
 from datetime import datetime
 import ctypes
 
-# Check if libGL.so.1 exists in the system
-def check_libGL():
-    try:
-        ctypes.CDLL("libGL.so.1")
-        return True
-    except OSError:
-        return False
-
-if not check_libGL():
-    st.error("libGL.so.1 is missing. Please install it on your system.")
-    st.stop()
-
-# Attempt to import OpenCV
+# Attempt to import OpenCV with the headless option
 try:
     import cv2
 except ImportError as e:
