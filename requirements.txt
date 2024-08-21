@@ -1,6 +1,6 @@
 streamlit
 opencv-python-headless
+numpy
 deepface
 kivy
 tf-keras
-numpy
