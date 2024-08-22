@@ -1,51 +1,51 @@
-   import streamlit as st
-   import numpy as np
-   import json
-   import os
-   from datetime import datetime
-   from streamlit_webrtc import webrtc_streamer, VideoTransformerBase, WebRtcMode
+import streamlit as st
+import numpy as np
+import json
+import os
+from datetime import datetime
+from streamlit_webrtc import webrtc_streamer, VideoTransformerBase, WebRtcMode
 
-   # Attempt to import OpenCV with the headless option
+# Attempt to import OpenCV with the headless option
+try:
+   import cv2
+except ImportError as e:
+   st.error(f"Failed to import cv2: {e}")
+   st.stop()
+
+# Attempt to import DeepFace and handle potential import errors
+try:
+   from deepface import DeepFace
+except ImportError as e:
+   st.error(f"Failed to import DeepFace: {e}")
+   st.stop()
+
+# Function to analyze facial attributes using DeepFace
+def analyze_frame(frame):
    try:
-       import cv2
-   except ImportError as e:
-       st.error(f"Failed to import cv2: {e}")
-       st.stop()
-
-   # Attempt to import DeepFace and handle potential import errors
-   try:
-       from deepface import DeepFace
-   except ImportError as e:
-       st.error(f"Failed to import DeepFace: {e}")
-       st.stop()
-
-   # Function to analyze facial attributes using DeepFace
-   def analyze_frame(frame):
-       try:
-           result = DeepFace.analyze(img_path=frame, actions=['age', 'gender', 'race', 'emotion'],
+      result = DeepFace.analyze(img_path=frame, actions=['age', 'gender', 'race', 'emotion'],
                                      enforce_detection=False,
                                      detector_backend="opencv",
                                      align=True,
                                      silent=False)
-           return result
-       except Exception as e:
-           st.error(f"Failed to analyze frame: {e}")
-           return None
+      return result
+   except Exception as e:
+        st.error(f"Failed to analyze frame: {e}")
+        return None
 
-   def overlay_text_on_frame(frame, texts):
-       overlay = frame.copy()
-       alpha = 0.9  # Adjust the transparency of the overlay
-       cv2.rectangle(overlay, (0, 0), (frame.shape[1], 100), (255, 255, 255), -1)  # White rectangle
-       cv2.addWeighted(overlay, alpha, frame, 1 - alpha, 0, frame)
+def overlay_text_on_frame(frame, texts):
+    overlay = frame.copy()
+    alpha = 0.9  # Adjust the transparency of the overlay
+    cv2.rectangle(overlay, (0, 0), (frame.shape[1], 100), (255, 255, 255), -1)  # White rectangle
+    cv2.addWeighted(overlay, alpha, frame, 1 - alpha, 0, frame)
 
-       text_position = 15  # Where the first text is put into the overlay
-       for text in texts:
-           cv2.putText(frame, text, (10, text_position), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
-           text_position += 20
+    text_position = 15  # Where the first text is put into the overlay
+    for text in texts:
+        cv2.putText(frame, text, (10, text_position), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
+        text_position += 20
 
-       return frame
+    return frame
 
-   def save_result_to_json(data, filename='attendance.json'):
+def save_result_to_json(data, filename='attendance.json'):
        if os.path.exists(filename):
            with open(filename, 'r') as file:
                attendance_data = json.load(file)
@@ -57,7 +57,7 @@
        with open(filename, 'w') as file:
            json.dump(attendance_data, file, indent=4)
 
-   class VideoTransformer(VideoTransformerBase):
+class VideoTransformer(VideoTransformerBase):
        def __init__(self, user_type, action):
            self.user_type = user_type
            self.action = action
@@ -105,7 +105,7 @@
 
            return img_with_overlay
 
-   def main():
+def main():
        activities = ["Webcam Face Detection", "About"]
        choice = st.sidebar.selectbox("Select Activity", activities)
        st.sidebar.markdown(
@@ -147,5 +147,5 @@
        else:
            pass
 
-   if __name__ == "__main__":
-       main()
+if __name__ == "__main__":
+    main()
