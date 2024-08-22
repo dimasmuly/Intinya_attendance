@@ -21,12 +21,16 @@ except ImportError as e:
 
 # Function to analyze facial attributes using DeepFace
 def analyze_frame(frame):
-    result = DeepFace.analyze(img_path=frame, actions=['age', 'gender', 'race', 'emotion'],
-                              enforce_detection=False,
-                              detector_backend="opencv",
-                              align=True,
-                              silent=False)
-    return result
+    try:
+        result = DeepFace.analyze(img_path=frame, actions=['age', 'gender', 'race', 'emotion'],
+                                  enforce_detection=False,
+                                  detector_backend="opencv",
+                                  align=True,
+                                  silent=False)
+        return result
+    except Exception as e:
+        st.error(f"Failed to analyze frame: {e}")
+        return None
 
 def overlay_text_on_frame(frame, texts):
     overlay = frame.copy()
@@ -63,6 +67,8 @@ class VideoTransformer(VideoTransformerBase):
 
         # Analyze the frame using DeepFace
         result = analyze_frame(img)
+        if result is None:
+            return img
 
         # Extract the face coordinates
         face_coordinates = result[0]["region"]
