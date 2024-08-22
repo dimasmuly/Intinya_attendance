@@ -5,4 +5,4 @@ deepface
 kivy
 tf-keras
 aiortc
-
+streamlit-webrtc
