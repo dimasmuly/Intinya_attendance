@@ -3,7 +3,7 @@ import numpy as np
 import json
 import os
 from datetime import datetime
-from aiortc.contrib.media import MediaPlayer
+from streamlit_webrtc import webrtc_streamer, VideoTransformerBase, WebRtcMode
 
 # Attempt to import OpenCV with the headless option
 try:
@@ -53,52 +53,25 @@ def save_result_to_json(data, filename='attendance.json'):
     with open(filename, 'w') as file:
         json.dump(attendance_data, file, indent=4)
 
-def facesentiment(user_type, action):
-    player = None
-    for i in range(5):  # Try different camera indices
-        try:
-            player = MediaPlayer(f'/dev/video{i}')
-            cap = player.video
-            if cap:
-                break
-        except FileNotFoundError:
-            continue
+class VideoTransformer(VideoTransformerBase):
+    def __init__(self, user_type, action):
+        self.user_type = user_type
+        self.action = action
 
-    if not player or not cap:
-        st.error("Failed to open webcam. Please check your camera.")
-        return
-
-    stframe = st.image([])  # Placeholder for the webcam feed
-
-    stop_button = st.button("Stop", key="stop_button")  # Add a unique key for the stop button
-
-    while True:
-        # Capture frame-by-frame
-        frame = cap.recv()
-
-        # Check if frame is captured successfully
-        if frame is None:
-            st.error("Failed to capture frame from camera")
-            st.info("Please turn off the other app that is using the camera and restart app")
-            st.stop()
-
-        # Convert the frame to a format suitable for OpenCV
-        frame = frame.to_ndarray(format="bgr24")
+    def transform(self, frame):
+        img = frame.to_ndarray(format="bgr24")
 
         # Analyze the frame using DeepFace
-        result = analyze_frame(frame)
+        result = analyze_frame(img)
 
         # Extract the face coordinates
         face_coordinates = result[0]["region"]
         x, y, w, h = face_coordinates['x'], face_coordinates['y'], face_coordinates['w'], face_coordinates['h']
 
         # Draw bounding box around the face
-        cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+        cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
         text = f"{result[0]['dominant_emotion']}"
-        cv2.putText(frame, text, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1, cv2.LINE_AA)
-
-        # Convert the BGR frame to RGB for Streamlit
-        frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        cv2.putText(img, text, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1, cv2.LINE_AA)
 
         # Overlay white rectangle with text on the frame
         texts = [
@@ -109,15 +82,12 @@ def facesentiment(user_type, action):
             f"Dominant Emotion: {result[0]['dominant_emotion']} {round(result[0]['emotion'][result[0]['dominant_emotion']], 1)}",
         ]
 
-        frame_with_overlay = overlay_text_on_frame(frame_rgb, texts)
-
-        # Display the frame in Streamlit
-        stframe.image(frame_with_overlay, channels="RGB")
+        img_with_overlay = overlay_text_on_frame(img, texts)
 
         # Save result to JSON
         data = {
-            "user_type": user_type,
-            "action": action,
+            "user_type": self.user_type,
+            "action": self.action,
             "age": result[0]['age'],
             "gender": result[0]['dominant_gender'],
             "race": result[0]['dominant_race'],
@@ -127,12 +97,7 @@ def facesentiment(user_type, action):
         }
         save_result_to_json(data)
 
-        # Add a delay to avoid overloading the system
-        if stop_button:
-            break
-
-    # Release the webcam and close all windows
-    player.close()
+        return img_with_overlay
 
 def main():
     activities = ["Webcam Face Detection", "About"]
@@ -153,7 +118,12 @@ def main():
             action = st.selectbox("Select Action", ["In", "Out"])
         
         if st.button("Start Detection", key="start_button"):  # Add a unique key for the start button
-            facesentiment(user_type, action)
+            webrtc_streamer(
+                key="example",
+                mode=WebRtcMode.SENDRECV,
+                video_transformer_factory=lambda: VideoTransformer(user_type, action),
+                media_stream_constraints={"video": True, "audio": False},
+            )
 
     elif choice == "About":
         st.subheader("About this app")
